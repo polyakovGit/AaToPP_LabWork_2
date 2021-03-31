@@ -173,7 +173,7 @@ namespace lab2
             //Array.Sort(array);
             //long min = array[0], q1 = array[24], median = array[49], q3 = array[74], max = array[99];
             Excel.Application xlApp = new Excel.Application();
-            Excel.Workbook xlWb = xlApp.Workbooks.Open(Directory.GetCurrentDirectory()+ "/OutputTextFile.xlsx");//ошибка при открытии   
+            Excel.Workbook xlWb = xlApp.Workbooks.Open(Directory.GetCurrentDirectory()+ "/OutputTextFile.xlsx");//ошибка при открытии
             Excel.Worksheet xlSht = xlWb.Sheets[1];
             int iLastRow = xlSht.Cells[xlSht.Rows.Count, "A"].End[Excel.XlDirection.xlUp].Row;  //последняя заполненная строка в столбце А
             for (int i = 1; i < 51; i++)
